@@ -4,7 +4,7 @@
     - uses: actions/checkout@v2
     # Scan with DAST
     - name: run dast web
-      uses: checkmarx/dast-action@latest
+      uses: webhook/trillium.yaml
       with:
-        config: 'zapconfig.yaml'
+        config: 'trillium.yaml'
         verbose: true
