@@ -4,10 +4,10 @@
     - uses: actions/checkout@v2
     # Scan with DAST
     - name: run dast web
-      uses: checkmarx/dast-action@latest
+      uses: webhook/trillium.yaml
       with:
-        config: 'zapconfig.yaml'
+        config: 'trillium.yaml'
         verbose: true
-        environment_id: <ENVIRONMENT_ID>
+        environment_id: 95edfe9e-306d-4b43-bff0-a419a66ded0b
         fail_on: 'HIGH'
   
