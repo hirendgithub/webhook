@@ -23,7 +23,7 @@ jobs:
           CX_APIKEY: ${{ secrets.CXONE_API }}
         with:
           command: web
-          config: dast-config/zap_config.yaml
+          config: trillium.yaml
           environment_id: 93dc4f36-20ca-4282-b832-7ce5a1d49f84
           fail_on: "HIGH"
           log_level: info
